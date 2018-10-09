@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Caf2</servlet-name>
+		<servlet-class>com.tmd.caf2.Caf2Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Caf2</servlet-name>
+		<url-pattern>/caf2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    <servlet-name>createAllShops</servlet-name>
+    <servlet-class>com.tmd.caf2.createAllShops</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createAllShops</servlet-name>
+    <url-pattern>/createAllShops</url-pattern>
+  </servlet-mapping>
+  
+  	<servlet>
+    <servlet-name>getAllShops</servlet-name>
+    <servlet-class>com.tmd.caf2.getAllShops</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getAllShops</servlet-name>
+    <url-pattern>/getAllShops</url-pattern>
+  </servlet-mapping>
+  
+    	<servlet>
+    <servlet-name>getNearby</servlet-name>
+    <servlet-class>com.tmd.caf2.getNearby</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getNearby</servlet-name>
+    <url-pattern>/getNearby</url-pattern>
+  </servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
